@@ -3,20 +3,58 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Art Showcase</title>
-  <meta name="description" content="Indigenous Australian art showcase connecting artists, their stories and artwork with customers across Australia.">
-  <style>
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f7f3ea;color:#1f1f1f}main{min-height:100vh;display:grid;place-items:center;padding:40px}.card{max-width:760px;background:white;border-radius:24px;padding:48px;box-shadow:0 20px 60px rgba(0,0,0,.08)}h1{font-size:clamp(42px,8vw,78px);margin:0 0 12px}p{font-size:20px;line-height:1.5;margin:0 0 18px}.tag{font-size:14px;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
-  </style>
+  <title>The ARTS | Aboriginal & Torres Strait Islander Art Hub</title>
+  <meta name="description" content="A showcase for Aboriginal and Torres Strait Islander artists, stories and artwork, with artist profiles, products, learning and support.">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-<main>
-  <section class="card">
-    <div class="tag">Coming soon</div>
-    <h1>Art Showcase</h1>
-    <p>Indigenous Australian art showcase connecting artists, their stories and artwork with customers across Australia.</p>
-    <p>This is the first live mock site while the full gallery is being built.</p>
-  </section>
-</main>
+<header class="site-header">
+  <a class="brand" href="/">
+    <div class="brand-mark" aria-hidden="true"></div>
+    <div><div class="brand-title">THE ARTS</div><div class="brand-sub">ABORIGINAL & TORRES STRAIT ISLANDER ART HUB</div></div>
+  </a>
+  <nav class="main-nav" aria-label="Main navigation">
+    <a class="active" href="/">Home</a><a href="/artists.html">Artists</a><a href="#products">Shop All</a><a href="#about">About Us</a><a href="#story">Our Story</a><a href="#learn">Learn</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="header-actions"><div class="icon-circle">⌕</div><div class="icon-circle">◯</div><div class="icon-circle">🛒</div></div>
+</header>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Celebrating culture.<br>Empowering artists.</h1>
+    <p>Authentic Aboriginal and Torres Strait Islander art, artist stories and products brought together in one hub — with practical support to help artists grow their reach and business.</p>
+    <div class="cta-row"><a class="btn btn-primary" href="#products">Shop artwork & products</a><a class="btn btn-dark" href="/artists.html">Meet our artists</a></div>
+  </div>
+  <aside class="hero-note"><strong>Born from Country.<br>Shared with the world.</strong>By supporting our artists, you’re supporting families, communities and culture.</aside>
+</section>
+<section class="trust-strip">
+  <div class="trust-item"><div class="trust-icon">◎</div><div><h3>Support Indigenous Artists</h3><p>Every purchase is designed to support artists and their communities.</p></div></div>
+  <div class="trust-item"><div class="trust-icon">⌁</div><div><h3>Authentic & Ethical</h3><p>Artwork and products are only used with artist consent and clear attribution.</p></div></div>
+  <div class="trust-item"><div class="trust-icon">AU</div><div><h3>Australian Owned</h3><p>Built and operated in Australia with local production capability.</p></div></div>
+  <div class="trust-item"><div class="trust-icon">▣</div><div><h3>Quality Products</h3><p>Artwork can extend across practical products, gifts and display pieces.</p></div></div>
+  <div class="trust-item"><div class="trust-icon">✦</div><div><h3>Culture & Respect</h3><p>Country, culture, artist identity and story remain central to the work.</p></div></div>
+</section>
+<section class="section" id="artists">
+  <div class="section-head"><h2>Featured Artists</h2><a class="section-link" href="/artists.html">View all artists →</a></div>
+  <div class="artist-grid">
+    <a class="artist-card" href="/artists/ngaire-j.html"><div class="mock-photo">NJ</div><div class="artist-copy"><div class="artist-name">Ngaire J.</div><div class="artist-meta">Mock artist profile</div><span class="view-chip">View artist</span></div></a>
+    <a class="artist-card" href="/artists/jarred-m.html" style="--dot1:#c85b16;--dot2:#f1d18a;--dot3:#0f3d54"><div class="mock-product"></div><div class="artist-copy"><div class="artist-name">Jarred M.</div><div class="artist-meta">Mock product collection</div><span class="view-chip">View artist</span></div></a>
+    <a class="artist-card" href="/artists/kamilaroi-cain-binge.html" style="--dot1:#e02f16;--dot2:#f0d74f;--dot3:#8f1b18"><div class="mock-photo">KC</div><div class="artist-copy"><div class="artist-name">Kamilaroi Cain-Binge</div><div class="artist-meta">Artist profile mockup</div><span class="view-chip">View artist</span></div></a>
+    <a class="artist-card" href="/artists/tommy-r.html" style="--dot1:#cf6122;--dot2:#e5c879;--dot3:#163f55"><div class="mock-product"></div><div class="artist-copy"><div class="artist-name">Tommy R.</div><div class="artist-meta">Mock artist profile</div><span class="view-chip">View artist</span></div></a>
+    <a class="artist-card" href="/artists/leah-w.html" style="--dot1:#bb491e;--dot2:#e6c37d;--dot3:#521a13"><div class="mock-product"></div><div class="artist-copy"><div class="artist-name">Leah W.</div><div class="artist-meta">Mock artist profile</div><span class="view-chip">View artist</span></div></a>
+  </div>
+</section>
+<section class="section" id="products">
+  <div class="section-head"><h2>Artwork Beyond the Wall</h2><span class="section-link">Mock product categories</span></div>
+  <div class="gallery-grid">
+    <div class="gallery-tile"><span>Original & printed artwork</span></div><div class="gallery-tile"><span>Leather & engraved gifts</span></div><div class="gallery-tile"><span>Tumblers, bottles & drinkware</span></div><div class="gallery-tile"><span>Homewares, earrings & products</span></div>
+  </div>
+</section>
+<section class="footer-panels" id="about">
+  <div class="footer-panel"><div class="footer-icon">◉</div><div><h3>For Artists</h3><p>Join the hub, showcase your work and explore product, fulfilment and marketing options.</p><a href="/artists.html">Learn more</a></div></div>
+  <div class="footer-panel" id="learn"><div class="footer-icon">⌂</div><div><h3>Learn & Grow</h3><p>Access practical tutorials to help with social media, online selling, content and business skills.</p><a href="#learn">Explore learning</a></div></div>
+  <div class="footer-panel" id="story"><div class="footer-icon">♡</div><div><h3>Our Story</h3><p>The hub is designed to combine artist storytelling, product development, fulfilment and technology in one place.</p><a href="#story">About us</a></div></div>
+  <div class="footer-panel" id="contact"><div class="footer-icon">✉</div><div><h3>Stay Connected</h3><p>Future versions will include artist enquiries, mailing-list signup and direct contact pathways.</p><a href="mailto:info@artshowcase.com.au">Contact</a></div></div>
+</section>
+<div class="disclaimer">Prototype only. Mock artist names, nations and product imagery are placeholders unless explicitly identified. Real artist content will be added with approval and attribution.</div>
 </body>
 </html>
