@@ -3,58 +3,78 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The ARTS | Aboriginal & Torres Strait Islander Art Hub</title>
-  <meta name="description" content="A showcase for Aboriginal and Torres Strait Islander artists, stories and artwork, with artist profiles, products, learning and support.">
-  <link rel="stylesheet" href="/styles.css">
+  <title>The ARTS | Aboriginal &amp; Torres Strait Islander Art Hub</title>
+  <meta name="description" content="A showcase for Aboriginal and Torres Strait Islander artists, their stories, artwork and products.">
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; background: #f5f0e6; }
+    body { font-family: Arial, Helvetica, sans-serif; }
+    .homepage {
+      position: relative;
+      width: min(100%, 1536px);
+      margin: 0 auto;
+      line-height: 0;
+      background: #f5f0e6;
+    }
+    .homepage-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      user-select: none;
+    }
+    .hotspot {
+      position: absolute;
+      z-index: 2;
+      display: block;
+      border-radius: 7px;
+      cursor: pointer;
+    }
+    .hotspot:focus-visible {
+      outline: 4px solid #ffffff;
+      box-shadow: 0 0 0 8px #b94516;
+    }
+    .artists-nav { left: 33.8%; top: 2.8%; width: 5.6%; height: 4.1%; }
+    .meet-artists { left: 23.9%; top: 36.7%; width: 11.1%; height: 4.8%; }
+    .view-all { left: 86.7%; top: 61.4%; width: 9%; height: 3.7%; }
+    .artist-card { top: 65.8%; height: 18.2%; }
+    .artist-ngaire { left: 3.5%; width: 18.2%; }
+    .artist-jarred { left: 22.4%; width: 17.6%; }
+    .artist-kamilaroi { left: 40.7%; width: 17.8%; }
+    .artist-tommy { left: 59.2%; width: 17.5%; }
+    .artist-leah { left: 77.5%; width: 18.3%; }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
 </head>
 <body>
-<header class="site-header">
-  <a class="brand" href="/">
-    <div class="brand-mark" aria-hidden="true"></div>
-    <div><div class="brand-title">THE ARTS</div><div class="brand-sub">ABORIGINAL & TORRES STRAIT ISLANDER ART HUB</div></div>
-  </a>
-  <nav class="main-nav" aria-label="Main navigation">
-    <a class="active" href="/">Home</a><a href="/artists.html">Artists</a><a href="#products">Shop All</a><a href="#about">About Us</a><a href="#story">Our Story</a><a href="#learn">Learn</a><a href="#contact">Contact</a>
-  </nav>
-  <div class="header-actions"><div class="icon-circle">⌕</div><div class="icon-circle">◯</div><div class="icon-circle">🛒</div></div>
-</header>
-<section class="hero">
-  <div class="hero-content">
-    <h1>Celebrating culture.<br>Empowering artists.</h1>
-    <p>Authentic Aboriginal and Torres Strait Islander art, artist stories and products brought together in one hub — with practical support to help artists grow their reach and business.</p>
-    <div class="cta-row"><a class="btn btn-primary" href="#products">Shop artwork & products</a><a class="btn btn-dark" href="/artists.html">Meet our artists</a></div>
-  </div>
-  <aside class="hero-note"><strong>Born from Country.<br>Shared with the world.</strong>By supporting our artists, you’re supporting families, communities and culture.</aside>
-</section>
-<section class="trust-strip">
-  <div class="trust-item"><div class="trust-icon">◎</div><div><h3>Support Indigenous Artists</h3><p>Every purchase is designed to support artists and their communities.</p></div></div>
-  <div class="trust-item"><div class="trust-icon">⌁</div><div><h3>Authentic & Ethical</h3><p>Artwork and products are only used with artist consent and clear attribution.</p></div></div>
-  <div class="trust-item"><div class="trust-icon">AU</div><div><h3>Australian Owned</h3><p>Built and operated in Australia with local production capability.</p></div></div>
-  <div class="trust-item"><div class="trust-icon">▣</div><div><h3>Quality Products</h3><p>Artwork can extend across practical products, gifts and display pieces.</p></div></div>
-  <div class="trust-item"><div class="trust-icon">✦</div><div><h3>Culture & Respect</h3><p>Country, culture, artist identity and story remain central to the work.</p></div></div>
-</section>
-<section class="section" id="artists">
-  <div class="section-head"><h2>Featured Artists</h2><a class="section-link" href="/artists.html">View all artists →</a></div>
-  <div class="artist-grid">
-    <a class="artist-card" href="/artists/ngaire-j.html"><div class="mock-photo">NJ</div><div class="artist-copy"><div class="artist-name">Ngaire J.</div><div class="artist-meta">Mock artist profile</div><span class="view-chip">View artist</span></div></a>
-    <a class="artist-card" href="/artists/jarred-m.html" style="--dot1:#c85b16;--dot2:#f1d18a;--dot3:#0f3d54"><div class="mock-product"></div><div class="artist-copy"><div class="artist-name">Jarred M.</div><div class="artist-meta">Mock product collection</div><span class="view-chip">View artist</span></div></a>
-    <a class="artist-card" href="/artists/kamilaroi-cain-binge.html" style="--dot1:#e02f16;--dot2:#f0d74f;--dot3:#8f1b18"><div class="mock-photo">KC</div><div class="artist-copy"><div class="artist-name">Kamilaroi Cain-Binge</div><div class="artist-meta">Artist profile mockup</div><span class="view-chip">View artist</span></div></a>
-    <a class="artist-card" href="/artists/tommy-r.html" style="--dot1:#cf6122;--dot2:#e5c879;--dot3:#163f55"><div class="mock-product"></div><div class="artist-copy"><div class="artist-name">Tommy R.</div><div class="artist-meta">Mock artist profile</div><span class="view-chip">View artist</span></div></a>
-    <a class="artist-card" href="/artists/leah-w.html" style="--dot1:#bb491e;--dot2:#e6c37d;--dot3:#521a13"><div class="mock-product"></div><div class="artist-copy"><div class="artist-name">Leah W.</div><div class="artist-meta">Mock artist profile</div><span class="view-chip">View artist</span></div></a>
-  </div>
-</section>
-<section class="section" id="products">
-  <div class="section-head"><h2>Artwork Beyond the Wall</h2><span class="section-link">Mock product categories</span></div>
-  <div class="gallery-grid">
-    <div class="gallery-tile"><span>Original & printed artwork</span></div><div class="gallery-tile"><span>Leather & engraved gifts</span></div><div class="gallery-tile"><span>Tumblers, bottles & drinkware</span></div><div class="gallery-tile"><span>Homewares, earrings & products</span></div>
-  </div>
-</section>
-<section class="footer-panels" id="about">
-  <div class="footer-panel"><div class="footer-icon">◉</div><div><h3>For Artists</h3><p>Join the hub, showcase your work and explore product, fulfilment and marketing options.</p><a href="/artists.html">Learn more</a></div></div>
-  <div class="footer-panel" id="learn"><div class="footer-icon">⌂</div><div><h3>Learn & Grow</h3><p>Access practical tutorials to help with social media, online selling, content and business skills.</p><a href="#learn">Explore learning</a></div></div>
-  <div class="footer-panel" id="story"><div class="footer-icon">♡</div><div><h3>Our Story</h3><p>The hub is designed to combine artist storytelling, product development, fulfilment and technology in one place.</p><a href="#story">About us</a></div></div>
-  <div class="footer-panel" id="contact"><div class="footer-icon">✉</div><div><h3>Stay Connected</h3><p>Future versions will include artist enquiries, mailing-list signup and direct contact pathways.</p><a href="mailto:info@artshowcase.com.au">Contact</a></div></div>
-</section>
-<div class="disclaimer">Prototype only. Mock artist names, nations and product imagery are placeholders unless explicitly identified. Real artist content will be added with approval and attribution.</div>
+  <main class="homepage">
+    <img
+      class="homepage-image"
+      src="/artshowcase-homepage.png"
+      width="1536"
+      height="1024"
+      alt="The ARTS Aboriginal and Torres Strait Islander Art Hub homepage"
+      draggable="false"
+    >
+
+    <a class="hotspot artists-nav" href="/artists.html"><span class="sr-only">Artists</span></a>
+    <a class="hotspot meet-artists" href="/artists.html"><span class="sr-only">Meet our artists</span></a>
+    <a class="hotspot view-all" href="/artists.html"><span class="sr-only">View all artists</span></a>
+
+    <a class="hotspot artist-card artist-ngaire" href="/artists/ngaire-j.html"><span class="sr-only">View Ngaire J.</span></a>
+    <a class="hotspot artist-card artist-jarred" href="/artists/jarred-m.html"><span class="sr-only">View Jarred M.</span></a>
+    <a class="hotspot artist-card artist-kamilaroi" href="/artists/kamilaroi-cain-binge.html"><span class="sr-only">View Kamilaroi Cain-Binge</span></a>
+    <a class="hotspot artist-card artist-tommy" href="/artists/tommy-r.html"><span class="sr-only">View Tommy R.</span></a>
+    <a class="hotspot artist-card artist-leah" href="/artists/leah-w.html"><span class="sr-only">View Leah W.</span></a>
+  </main>
 </body>
 </html>
