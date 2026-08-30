@@ -11,3 +11,13 @@ body:has(.profile-portrait[src="/kamilaroi-cain-binge.png"]) .profile-wrap{
 body:has(.profile-portrait[src="/kamilaroi-cain-binge.png"]) .content-card{
   background:rgba(255,255,255,.94);
 }
+
+/* Homepage banner reused on the Kamilaroi Cain-Binge profile */
+body:has(.profile-portrait[src="/kamilaroi-cain-binge.png"]) .profile-hero{
+  background-image:linear-gradient(90deg,rgba(0,0,0,.68) 0 48%,rgba(0,0,0,.18) 78%),url("/artshowcase-homepage.png");
+  background-size:100% auto;
+  background-position:center -6.51vw;
+  background-repeat:no-repeat;
+  background-color:#24150f;
+}
+body:has(.profile-portrait[src="/kamilaroi-cain-binge.png"]) .profile-hero:after{display:none}
