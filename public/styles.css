@@ -39,3 +39,23 @@ body:has(.profile-portrait[src="/kamilaroi-cain-binge.png"]) .profile-art{
     transform:none;
   }
 }
+
+/* Match Ngaire J.'s profile to the completed Kamilaroi layout */
+body:has(.profile-portrait[src="/ngaire-j-profile.jpg"]) .profile-wrap{
+  background-color:#f5f0e6;
+  background-image:radial-gradient(circle at 18px 18px,rgba(127,50,24,.10) 0 3px,transparent 3.5px),radial-gradient(circle at 48px 42px,rgba(217,168,78,.13) 0 2.5px,transparent 3px),radial-gradient(circle at 78px 20px,rgba(48,35,27,.07) 0 2px,transparent 2.5px);
+  background-size:96px 72px;
+}
+body:has(.profile-portrait[src="/ngaire-j-profile.jpg"]) .content-card{background:rgba(255,255,255,.94)}
+body:has(.profile-portrait[src="/ngaire-j-profile.jpg"]) .profile-hero{
+  background-image:linear-gradient(90deg,rgba(0,0,0,.68) 0 48%,rgba(0,0,0,.18) 78%),url("/kamilaroi-profile-banner.jpg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-color:#24150f;
+}
+body:has(.profile-portrait[src="/ngaire-j-profile.jpg"]) .profile-hero:after{display:none}
+body:has(.profile-portrait[src="/ngaire-j-profile.jpg"]) .profile-art{
+  position:absolute;left:50%;top:50%;width:50%;transform:translate(-50%,-50%);
+}
+@media(max-width:760px){body:has(.profile-portrait[src="/ngaire-j-profile.jpg"]) .profile-art{position:relative;left:auto;top:auto;width:auto;transform:none}}
