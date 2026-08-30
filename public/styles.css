@@ -14,9 +14,9 @@ body:has(.profile-portrait[src="/kamilaroi-cain-binge.png"]) .content-card{
 
 /* Homepage banner reused on the Kamilaroi Cain-Binge profile */
 body:has(.profile-portrait[src="/kamilaroi-cain-binge.png"]) .profile-hero{
-  background-image:linear-gradient(90deg,rgba(0,0,0,.68) 0 48%,rgba(0,0,0,.18) 78%),url("/artshowcase-homepage.png");
-  background-size:100% auto;
-  background-position:center -6.51vw;
+  background-image:linear-gradient(90deg,rgba(0,0,0,.68) 0 48%,rgba(0,0,0,.18) 78%),url("/kamilaroi-profile-banner.jpg");
+  background-size:cover;
+  background-position:center;
   background-repeat:no-repeat;
   background-color:#24150f;
 }
