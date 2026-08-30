@@ -21,3 +21,21 @@ body:has(.profile-portrait[src="/kamilaroi-cain-binge.png"]) .profile-hero{
   background-color:#24150f;
 }
 body:has(.profile-portrait[src="/kamilaroi-cain-binge.png"]) .profile-hero:after{display:none}
+
+/* Centre only the Kamilaroi Cain-Binge portrait within her profile banner */
+body:has(.profile-portrait[src="/kamilaroi-cain-binge.png"]) .profile-art{
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:50%;
+  transform:translate(-50%,-50%);
+}
+@media(max-width:760px){
+  body:has(.profile-portrait[src="/kamilaroi-cain-binge.png"]) .profile-art{
+    position:relative;
+    left:auto;
+    top:auto;
+    width:auto;
+    transform:none;
+  }
+}
